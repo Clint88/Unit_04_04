@@ -28,12 +28,17 @@
  }
 
  /* Structural Styles */
+ /*this is kind of like the layout of the css*/
 html{
     background-color: rgb(212, 196, 105);
 }
-
+/*this got rid of a blank space that made it look bad*/
 body{
+    background-color: rgb(218, 180, 228);
+}
+body section#leftcol{
     background-color: rgb(250, 241, 228);
+    margin: 0px;
 }
 section{
     padding-left: 1.9em;
@@ -42,6 +47,7 @@ section{
 section>h1{
     font-family: 'champagne', san-serif;
     font-size: 4em;
+    margin: 5px;
 }
 footer{
     color: white;
@@ -52,22 +58,60 @@ footer{
     padding-bottom: 1px;
 }
 
-/* Body Header Styles */
-
-
 /* Navigation Styles */
-
+body section#rightcol nav>ul{
+    list-style-type: none;
+}
+body section#rightcol nav a:link{
+    text-decoration: none;
+    color: gray;
+}
+body section#rightcol{
+    background-color: rgb(218, 180, 228);
+}
+body section#rightcol h2{
+    font-size: 2em;
+}
+body section#rightcol nav a{
+    color: gray;
+    font-size: 1em;
+}
+header nav>ul{
+    background-color: purple;
+}
+header nav a:link, header nav a:visited{
+    color: white;
+    text-decoration: none;
+}
+nav>h2{
+    font-family: 'champagne', san-serif;
+}
 
 /* Outline Styles */
-
+/*I used none to get rid of the underlining*/
+nav#rightcol{
+    background-color: none;
+}
 
 /* Section Styles */
-
-
-/* Article Styles */
-
+blockquote{
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 1.2em;
+    text-align: center
+}
 
 /* Aside Styles */
-aside{
-    background-color: rgb(255, 165, 155)
+body section#leftcol aside:first-of-type{
+    background-color: rgb(255, 165, 155);
+}
+body section#leftcol aside>h1:first-of-type{
+    text-align: center;
+
+}
+body section#leftcol aside>h2{
+    font-size: 1.2em;    
+}
+body section#leftcol aside{
+    background-color: rgb(231, 159, 90);
 }
